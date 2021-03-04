@@ -1,0 +1,924 @@
+[2020-04-23 12:32:37]  INFO  TestBookTagUserDAO.main(): Line 24 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@ea9e141, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@1e54cb33, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@33cbfa57, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-24 19:04:00]  INFO  TestBookTagUserDAO.main(): Line 44 - [
+User [username=jdoe@mail.com, password=], 
+User [username=jsmith@mail.com, password=pass], 
+User [username=user@mail.com, password=pass]]
+
+[2020-04-24 19:04:54]  INFO  TestBookTagUserDAO.main(): Line 44 - [
+User [username=jdoe@mail.com, password=], 
+User [username=jsmith@mail.com, password=pass], 
+User [username=user@mail.com, password=pass]]
+
+[2020-04-24 19:04:55]  INFO  UserDAOImpl.addUser(): Line 77 - 'firstlast@mail.com' has been registered.
+
+[2020-04-24 19:04:55]  INFO  TestBookTagUserDAO.main(): Line 46 - true
+
+[2020-04-24 19:21:42]  INFO  TestBookTagUserDAO.main(): Line 24 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-24 19:21:43]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Duplicate entry 'firstlast@mail.com' for key 'PRIMARY'
+
+[2020-04-24 19:21:43]  ERROR  UserDAOImpl.addUser(): Line 85 - 'firstlast@mail.com' could not be registered.
+
+[2020-04-24 19:21:43]  INFO  TestBookTagUserDAO.main(): Line 46 - false
+
+[2020-04-24 19:24:51]  INFO  UserDAOImpl.addUser(): Line 78 - 'firstlast@mail.com' has been registered.
+
+[2020-04-24 19:24:52]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:1: unexpected token: USE
+
+[2020-04-24 19:24:52]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:1: unexpected token: USE
+
+line 1:1: unexpected token: USE
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:210)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.UserDAOImpl.addUser(UserDAOImpl.java:100)
+	at com.pubhub.test.TestBookTagUserDAO.main(TestBookTagUserDAO.java:46)
+[2020-04-25 12:00:50]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 12:00:50]  ERROR  ErrorTracker.reportError(): Line 62 -  null
+
+[2020-04-25 12:00:50]  ERROR  ErrorTracker.reportError(): Line 57 -  null
+
+ null
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.handleWithFragment(HqlSqlWalker.java:523)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createEntityJoin(HqlSqlWalker.java:489)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:389)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3983)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3769)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.getCart(Shopping_CartDAOImpl.java:28)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:55)
+[2020-04-25 12:13:55]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 12:13:55]  ERROR  ErrorTracker.reportError(): Line 62 -  null
+
+[2020-04-25 12:13:55]  ERROR  ErrorTracker.reportError(): Line 57 -  null
+
+ null
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.handleWithFragment(HqlSqlWalker.java:523)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createEntityJoin(HqlSqlWalker.java:489)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:389)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3983)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3769)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3647)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:732)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:588)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:325)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:273)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.getCart(Shopping_CartDAOImpl.java:28)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:55)
+[2020-04-25 14:58:18]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 14:58:19]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@76c52298, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 22:14:48]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@3cee53dc, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 22:14:48]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:1: unexpected token: CREATE
+
+[2020-04-25 22:14:48]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:1: unexpected token: CREATE
+
+line 1:1: unexpected token: CREATE
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:210)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.createCart(Shopping_CartDAOImpl.java:66)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:56)
+[2020-04-25 22:35:37]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@3cee53dc, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 22:41:02]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@3cee53dc, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 22:41:22]  INFO  Shopping_CartDAOImpl.createCart(): Line 70 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-25 22:41:23]  INFO  TestDAO.main(): Line 56 - false
+
+[2020-04-25 22:44:48]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@3cee53dc, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 22:44:48]  INFO  Shopping_CartDAOImpl.createCart(): Line 67 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-25 22:44:48]  INFO  TestDAO.main(): Line 56 - true
+
+[2020-04-25 22:48:20]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@3cee53dc, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-25 22:48:33]  INFO  Shopping_CartDAOImpl.createCart(): Line 66 - Shopping_Cart table has been created for 'user@mail.com'
+
+[2020-04-25 22:48:33]  INFO  TestDAO.main(): Line 56 - true
+
+[2020-04-26 22:37:34]  INFO  TestDAO.main(): Line 55 - [[Ljava.lang.Object;@6e106680]
+
+[2020-04-26 22:51:51]  INFO  TestDAO.main(): Line 55 - [
+Shopping_Cart [id=1, isbn13=1111111111111]]
+
+[2020-04-26 22:53:35]  INFO  TestDAO.main(): Line 55 - [
+Shopping_Cart [id=1, isbn13=1111111111111]]
+
+[2020-04-27 10:44:48]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 11:27:36]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 11:57:37]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 11:58:59]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 11:59:50]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 12:05:04]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 12:08:20]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 12:09:35]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''firstlast' s WHERE b.isbn_13 = s.isbn_13' at line 1
+
+[2020-04-27 12:11:15]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 12:11:36]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Table 'pubhub.shopping_cart_user' doesn't exist
+
+[2020-04-27 12:15:15]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Table 'pubhub.shopping_cart_user' doesn't exist
+
+[2020-04-27 12:15:20]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-27 12:46:09]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Barron, author=Sousmate, publishDate=2019-09-05, price=100.5, content=null, tagName=null]]
+
+[2020-04-27 12:59:26]  INFO  TestDAO.main(): Line 55 - [
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Barron, author=Sousmate, publishDate=2019-09-05, price=100.5, content=null, tagName=null]]
+
+[2020-04-27 13:03:31]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:37: expecting OPEN, found 'VALUES'
+
+[2020-04-27 13:03:31]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:37: expecting OPEN, found 'VALUES'
+
+line 1:37: expecting OPEN, found 'VALUES'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertablePropertySpec(HqlBaseParser.java:851)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.intoClause(HqlBaseParser.java:833)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertStatement(HqlBaseParser.java:349)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:204)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 13:03:57]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:37: expecting OPEN, found 'VALUES'
+
+[2020-04-27 13:03:57]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:37: expecting OPEN, found 'VALUES'
+
+line 1:37: expecting OPEN, found 'VALUES'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertablePropertySpec(HqlBaseParser.java:851)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.intoClause(HqlBaseParser.java:833)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertStatement(HqlBaseParser.java:349)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:204)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 13:08:03]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:47: unexpected token: VALUES
+
+[2020-04-27 13:08:03]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:47: unexpected token: VALUES
+
+line 1:47: unexpected token: VALUES
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1060)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:748)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertStatement(HqlBaseParser.java:351)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:204)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 13:08:03]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:63: expecting EOF, found ')'
+
+[2020-04-27 13:08:03]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:63: expecting EOF, found ')'
+
+line 1:63: expecting EOF, found ')'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:215)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 13:09:49]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:47: unexpected token: VALUES
+
+[2020-04-27 13:09:49]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:47: unexpected token: VALUES
+
+line 1:47: unexpected token: VALUES
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1060)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:748)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertStatement(HqlBaseParser.java:351)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:204)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 13:09:49]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:63: expecting EOF, found ')'
+
+[2020-04-27 13:09:49]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:63: expecting EOF, found ')'
+
+line 1:63: expecting EOF, found ')'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:215)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 13:13:49]  ERROR  ErrorTracker.reportError(): Line 62 - line 1:47: unexpected token: :
+
+[2020-04-27 13:13:49]  ERROR  ErrorTracker.reportError(): Line 57 - line 1:47: unexpected token: :
+
+line 1:47: unexpected token: :
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1060)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:748)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertStatement(HqlBaseParser.java:351)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:204)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:604)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:716)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:113)
+	at com.pubhub.dao.Shopping_CartDAOImpl.addItem(Shopping_CartDAOImpl.java:96)
+	at com.pubhub.test.TestDAO.main(TestDAO.java:57)
+[2020-04-27 14:33:20]  INFO  Shopping_CartDAOImpl.addItem(): Line 97 - Book '789' was added
+
+[2020-04-27 14:33:20]  INFO  TestDAO.main(): Line 57 - true
+
+[2020-04-27 14:42:21]  INFO  Shopping_CartDAOImpl.removeItem(): Line 126 - Book '789' was removed
+
+[2020-04-27 14:42:22]  INFO  TestDAO.main(): Line 58 - true
+
+[2020-04-27 14:49:26]  INFO  Shopping_CartDAOImpl.clearCart(): Line 155 - shopping_cart_firstlast was cleared
+
+[2020-04-27 14:49:26]  INFO  TestDAO.main(): Line 59 - true
+
+[2020-04-27 15:20:29]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-27 15:20:34]  INFO  Shopping_CartDAOImpl.createCart(): Line 67 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-27 15:20:34]  INFO  TestDAO.main(): Line 56 - true
+
+[2020-04-28 00:24:00]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:24:08]  INFO  Shopping_CartDAOImpl.createCart(): Line 67 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-28 00:24:08]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-04-28 00:26:29]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@17b64941, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@53ac845a, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:26:36]  INFO  Purchased_BookDAOImpl.createHistory(): Line 67 - Purchased_Book table has been created for 'firstlast@mail.com'
+
+[2020-04-28 00:26:37]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-04-28 00:33:35]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:33:35]  INFO  Purchased_BookDAOImpl.addItem(): Line 97 - Book '12345' was added
+
+[2020-04-28 00:33:35]  INFO  TestDAO.main(): Line 63 - true
+
+[2020-04-28 00:34:01]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:34:02]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Table 'pubhub.shopping_cart_firstlast' doesn't exist
+
+[2020-04-28 00:34:59]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:34:59]  INFO  TestDAO.main(): Line 61 - [
+Book [isbn13=1111111111111, title=Russell Barron, author=The Adventures of Steve, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Author, author=Title, publishDate=2019-09-01, price=321.75, content=null, tagName=null]]
+
+[2020-04-28 00:35:32]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:35:32]  INFO  Purchased_BookDAOImpl.removeItem(): Line 126 - Book '12345' was removed
+
+[2020-04-28 00:35:33]  INFO  TestDAO.main(): Line 64 - true
+
+[2020-04-28 00:35:59]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:36:11]  INFO  Purchased_BookDAOImpl.clearHistory(): Line 155 - purchased_book_firstlast was cleared
+
+[2020-04-28 00:36:11]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-28 00:46:29]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:46:29]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE `shopping_cart_firstlast` (`cart_id` int(11) NOT NULL AUTO_INCREMEN' at line 1
+
+[2020-04-28 00:48:26]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:48:28]  INFO  Shopping_CartDAOImpl.createCart(): Line 67 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-28 00:48:28]  INFO  TestDAO.main(): Line 56 - true
+
+[2020-04-28 00:48:28]  INFO  Shopping_CartDAOImpl.addItem(): Line 97 - Book '789' was added
+
+[2020-04-28 00:48:28]  INFO  TestDAO.main(): Line 57 - true
+
+[2020-04-28 00:52:25]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:52:26]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Table 'shopping_cart_firstlast' already exists
+
+[2020-04-28 00:53:23]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@7e2f86e6, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@4d774249, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@17b64941, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 00:53:35]  INFO  Shopping_CartDAOImpl.createCart(): Line 71 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-28 00:53:35]  INFO  TestDAO.main(): Line 56 - true
+
+[2020-04-28 10:31:43]  INFO  Shopping_CartDAOImpl.createCart(): Line 70 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-28 10:31:43]  INFO  TestDAO.main(): Line 56 - true
+
+[2020-04-28 10:31:49]  INFO  Purchased_BookDAOImpl.createHistory(): Line 77 - Purchased_Book table has been created for 'firstlast@mail.com'
+
+[2020-04-28 10:31:49]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-04-28 19:54:53]  INFO  BookDAOImpl.addBook(): Line 137 - 'PT' was added
+
+[2020-04-28 19:54:53]  INFO  TestDAO.main(): Line 36 - true
+
+[2020-04-28 19:59:33]  INFO  Purchased_BookDAOImpl.createHistory(): Line 78 - Purchased_Book table has been created for 'firstlast@mail.com'
+
+[2020-04-28 19:59:33]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-04-28 20:01:19]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111, title=PT, author=PA, publishDate=2020-04-28, price=413.05, content=null, tagName=null], 
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@359ff4d9, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@7a22a3c2, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@f4cfd90, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 20:01:19]  INFO  Purchased_BookDAOImpl.addItem(): Line 108 - Book '1111' was added
+
+[2020-04-28 20:01:20]  INFO  TestDAO.main(): Line 63 - true
+
+[2020-04-28 20:01:35]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111, title=PT, author=PA, publishDate=2020-04-28, price=413.05, content=null, tagName=null], 
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@359ff4d9, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@7a22a3c2, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@f4cfd90, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 20:56:18]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111, title=PT, author=PA, publishDate=2020-04-28, price=413.05, content=null, tagName=null], 
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@359ff4d9, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@7a22a3c2, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@f4cfd90, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 20:56:18]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Column count doesn't match value count at row 1
+
+[2020-04-28 20:59:55]  INFO  TestDAO.main(): Line 30 - [
+Book [isbn13=1111, title=PT, author=PA, publishDate=2020-04-28, price=413.05, content=null, tagName=null], 
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=[B@359ff4d9, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=[B@7a22a3c2, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=[B@f4cfd90, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-28 20:59:55]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Unknown column 'PT' in 'field list'
+
+[2020-04-28 21:47:50]  INFO  Purchased_BookDAOImpl.addItem(): Line 109 - Book '1111' was added
+
+[2020-04-28 21:47:52]  INFO  TestDAO.main(): Line 63 - true
+
+[2020-04-28 22:13:06]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1988' for column 'purchase_date' at row 1
+
+[2020-04-28 22:22:48]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1988' for column 'publish_date' at row 1
+
+[2020-04-28 22:24:13]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1988' for column 'publish_date' at row 1
+
+[2020-04-28 22:47:17]  INFO  Purchased_BookDAOImpl.addItem(): Line 110 - Book '1111' was added
+
+[2020-04-28 22:47:17]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-29 09:45:30]  INFO  Purchased_BookDAOImpl.addItem(): Line 110 - Book '1111' was added
+
+[2020-04-29 09:45:30]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-29 09:45:48]  INFO  Purchased_BookDAOImpl.addItem(): Line 110 - Book '1111' was added
+
+[2020-04-29 09:45:49]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-29 10:07:21]  INFO  BookDAOImpl.addBook(): Line 137 - 'PT' was added
+
+[2020-04-29 10:07:21]  INFO  TestDAO.main(): Line 38 - true
+
+[2020-04-29 10:08:28]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@66e8997c, [Ljava.lang.Object;@6f0cb5a1, [Ljava.lang.Object;@1b29d52b, [Ljava.lang.Object;@47547132, [Ljava.lang.Object;@655523dd, [Ljava.lang.Object;@6f7e336b]
+
+[2020-04-29 10:09:31]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@66e8997c, [Ljava.lang.Object;@6f0cb5a1, [Ljava.lang.Object;@1b29d52b, [Ljava.lang.Object;@47547132, [Ljava.lang.Object;@655523dd, [Ljava.lang.Object;@6f7e336b]
+
+[2020-04-29 10:10:55]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@66e8997c, [Ljava.lang.Object;@6f0cb5a1, [Ljava.lang.Object;@1b29d52b, [Ljava.lang.Object;@47547132, [Ljava.lang.Object;@655523dd, [Ljava.lang.Object;@6f7e336b]
+
+[2020-04-29 10:12:18]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@66e8997c, [Ljava.lang.Object;@6f0cb5a1, [Ljava.lang.Object;@1b29d52b, [Ljava.lang.Object;@47547132, [Ljava.lang.Object;@655523dd, [Ljava.lang.Object;@6f7e336b]
+
+[2020-04-29 10:14:13]  INFO  TestDAO.main(): Line 63 - []
+
+[2020-04-29 10:14:39]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@1b29d52b]
+
+[2020-04-29 10:25:52]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@1b29d52b]
+
+[2020-04-29 10:26:14]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@1b29d52b]
+
+[2020-04-29 10:32:37]  INFO  TestDAO.main(): Line 63 - []
+
+[2020-04-29 10:34:10]  INFO  TestDAO.main(): Line 63 - [
+Book [isbn13=1111, title=PA, author=PT, publishDate=2020-04-29, price=413.05, content=null, tagName=null]]
+
+[2020-04-29 10:36:42]  INFO  TestDAO.main(): Line 63 - [
+Book [isbn13=1111, title=PT, author=PA, publishDate=2020-04-29, price=413.05, content=null, tagName=null], 
+Book [isbn13=1111111111111, title=The Adventures of Steve, author=Russell Barron, publishDate=2019-09-04, price=123.5, content=null, tagName=null], 
+Book [isbn13=12345, title=Title, author=Author, publishDate=2019-09-01, price=321.75, content=null, tagName=null], 
+Book [isbn13=2222222222222, title=Sousmate, author=Barron, publishDate=2019-09-05, price=100.5, content=null, tagName=null], 
+Book [isbn13=3333333333333, title=Java Development, author=Barron, publishDate=2019-09-05, price=200.25, content=null, tagName=null], 
+Book [isbn13=789, title=T, author=A, publishDate=2019-09-05, price=234.0, content=null, tagName=null]]
+
+[2020-04-29 10:38:42]  INFO  TestDAO.main(): Line 63 - [[Ljava.lang.Object;@66e8997c, [Ljava.lang.Object;@6f0cb5a1, [Ljava.lang.Object;@1b29d52b, [Ljava.lang.Object;@47547132, [Ljava.lang.Object;@655523dd, [Ljava.lang.Object;@6f7e336b]
+
+[2020-04-29 10:45:37]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=2, purchaseDate=2020-04-29, isbn13=null, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 10:48:44]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=2, purchaseDate=2020-04-29, isbn13=1111, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:19:48]  INFO  Purchased_BookDAOImpl.addItem(): Line 128 - Book '1111' was added
+
+[2020-04-29 11:19:48]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-29 11:26:00]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=2, purchaseDate=2020-04-29, isbn13=1111, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:26:14]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=2, purchaseDate=2020-04-29, isbn13=1111, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:26:50]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=2, purchaseDate=2020-04-29, isbn13=1111, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=3, purchaseDate=2020-04-29, isbn13=789, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:27:38]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-04-29, isbn13=789, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-04-29, isbn13=1111, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:29:34]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-04-29, isbn13=null, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-04-29, isbn13=null, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:29:51]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-04-29, isbn13=789, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-04-29, isbn13=1111, title=null, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:33:27]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-04-29, isbn13=789, title=Title, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-04-29, isbn13=1111, title=PT, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:39:50]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-04-29, isbn13=789, title=Title, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-04-29, isbn13=1111, title=PT, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:40:34]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:44:18]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=null, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:44:45]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2020-04-29, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2020-04-29, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:45:32]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=0.0, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=0.0, content=null, tagName=null]]
+
+[2020-04-29 11:46:51]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=null, tagName=null]]
+
+[2020-04-29 11:48:14]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=null, tagName=null]]
+
+[2020-04-29 11:48:54]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=null, tagName=null], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=null, tagName=null]]
+
+[2020-04-29 11:50:06]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=null, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=null, tagName=action]]
+
+[2020-04-29 11:50:45]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=null, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=null, tagName=action]]
+
+[2020-04-29 11:59:22]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=[B@4e61e4c2, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=[B@c6a6c1d, tagName=action]]
+
+[2020-04-29 12:00:24]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=[B@4e61e4c2, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=[B@c6a6c1d, tagName=action]]
+
+[2020-04-29 12:11:24]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=[B@c6a6c1d, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=[B@36dfbdaf, tagName=action], 
+Purchased_Book [id=9, purchaseDate=2020-01-01, isbn13=12345, title=PT1, author=PA1, publishDate=2019-01-01, price=212.24, content=[B@4f82663e, tagName=fiction]]
+
+[2020-04-29 12:13:28]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=[B@c6a6c1d, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=[B@36dfbdaf, tagName=action], 
+Purchased_Book [id=9, purchaseDate=2020-01-01, isbn13=12345, title=PT1, author=, publishDate=2019-01-01, price=212.24, content=[B@4f82663e, tagName=comedy]]
+
+[2020-04-29 12:14:05]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=[B@c6a6c1d, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=[B@36dfbdaf, tagName=action], 
+Purchased_Book [id=9, purchaseDate=2020-01-01, isbn13=12345, title=, author=, publishDate=2019-01-01, price=212.24, content=[B@4f82663e, tagName=comedy]]
+
+[2020-04-29 12:17:05]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=6, purchaseDate=2020-01-01, isbn13=789, title=Title, author=Author, publishDate=2019-01-01, price=314.75, content=[B@c6a6c1d, tagName=adventure], 
+Purchased_Book [id=7, purchaseDate=2020-01-01, isbn13=1111, title=PT, author=PA, publishDate=2019-01-01, price=413.05, content=[B@36dfbdaf, tagName=action], 
+Purchased_Book [id=9, purchaseDate=2020-01-01, isbn13=12345, title=null, author=PA1, publishDate=2019-01-01, price=212.24, content=[B@4f82663e, tagName=comedy]]
+
+[2020-04-29 13:29:37]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Table 'pubhub.purchased_book_firstlast' doesn't exist
+
+[2020-04-29 13:29:50]  INFO  TagDAOImpl.addTag(): Line 119 - 'Adventure' was added
+
+[2020-04-29 13:29:50]  INFO  TestDAO.main(): Line 44 - true
+
+[2020-04-29 13:33:02]  INFO  Shopping_CartDAOImpl.createCart(): Line 89 - Shopping_Cart table has been created for 'firstlast@mail.com'
+
+[2020-04-29 13:33:02]  INFO  TestDAO.main(): Line 58 - true
+
+[2020-04-29 13:33:58]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1987' for column 'publish_date' at row 1
+
+[2020-04-29 13:35:09]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Table 'pubhub.shopping_cartfirstlast' doesn't exist
+
+[2020-04-29 13:35:40]  INFO  TestDAO.main(): Line 57 - []
+
+[2020-04-29 13:36:38]  INFO  TestDAO.main(): Line 57 - []
+
+[2020-04-29 13:50:17]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1987' for column 'publish_date' at row 1
+
+[2020-04-29 14:12:58]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1987' for column 'publish_date' at row 1
+
+[2020-04-29 14:14:35]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '2018' for column 'publish_date' at row 1
+
+[2020-04-29 14:19:23]  INFO  Shopping_CartDAOImpl.addItem(): Line 127 - Book '1111' was added to cart
+
+[2020-04-29 14:19:24]  INFO  TestDAO.main(): Line 59 - true
+
+[2020-04-29 14:23:26]  INFO  Shopping_CartDAOImpl.deleteItem(): Line 156 - Book '1111' was removed
+
+[2020-04-29 14:23:26]  INFO  TestDAO.main(): Line 60 - true
+
+[2020-04-29 14:24:32]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Data truncation: Incorrect date value: '1987' for column 'publish_date' at row 1
+
+[2020-04-29 14:26:59]  INFO  Shopping_CartDAOImpl.addItem(): Line 127 - Book '1111' was added to cart
+
+[2020-04-29 14:26:59]  INFO  TestDAO.main(): Line 59 - true
+
+[2020-04-29 14:29:32]  INFO  Shopping_CartDAOImpl.addItem(): Line 127 - Book '1111' was added to cart
+
+[2020-04-29 14:29:33]  INFO  TestDAO.main(): Line 59 - true
+
+[2020-04-29 14:31:16]  INFO  Shopping_CartDAOImpl.deleteItem(): Line 156 - Book '1111' was removed
+
+[2020-04-29 14:31:17]  INFO  TestDAO.main(): Line 60 - true
+
+[2020-04-29 14:42:46]  INFO  Purchased_BookDAOImpl.createHistory(): Line 93 - Purchased_Book table has been created for 'firstlast@mail.com'
+
+[2020-04-29 14:42:46]  INFO  TestDAO.main(): Line 64 - true
+
+[2020-04-29 14:43:09]  INFO  TestDAO.main(): Line 63 - []
+
+[2020-04-29 14:43:24]  INFO  Purchased_BookDAOImpl.addItem(): Line 126 - Book '1111' was added to order history
+
+[2020-04-29 14:43:25]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-29 14:43:32]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=1, purchaseDate=2020-04-29, isbn13=1111, title=PT, author=PA, publishDate=2020-04-29, price=413.05, content=null, tagName=null]]
+
+[2020-04-29 14:45:38]  INFO  TagDAOImpl.deleteTagByISBN(): Line 195 - Tag '1111' was removed
+
+[2020-04-29 14:45:39]  INFO  TestDAO.main(): Line 49 - true
+
+[2020-04-29 14:46:07]  INFO  TagDAOImpl.addTag(): Line 119 - 'Adventure' was added
+
+[2020-04-29 14:46:07]  INFO  TestDAO.main(): Line 44 - true
+
+[2020-04-29 14:46:34]  INFO  BookDAOImpl.deleteBookByISBN(): Line 204 - Book '1111' was removed
+
+[2020-04-29 14:46:36]  INFO  TestDAO.main(): Line 40 - true
+
+[2020-04-29 14:47:00]  INFO  BookDAOImpl.addBook(): Line 137 - 'PT' was added
+
+[2020-04-29 14:47:00]  INFO  TestDAO.main(): Line 38 - true
+
+[2020-04-29 14:47:34]  INFO  TagDAOImpl.addTag(): Line 119 - 'Adventure' was added
+
+[2020-04-29 14:47:34]  INFO  TestDAO.main(): Line 44 - true
+
+[2020-04-29 14:47:34]  INFO  TestDAO.main(): Line 47 - 
+Tag [isbn13=1111, tagName=Adventure]
+
+[2020-04-29 14:47:34]  INFO  TestDAO.main(): Line 63 - []
+
+[2020-04-29 14:48:14]  INFO  Purchased_BookDAOImpl.addItem(): Line 132 - Book '1111' was added to order history
+
+[2020-04-29 14:48:15]  INFO  TestDAO.main(): Line 65 - true
+
+[2020-04-29 14:48:21]  INFO  TestDAO.main(): Line 63 - [
+Purchased_Book [id=2, purchaseDate=2020-04-29, isbn13=1111, title=PT, author=PA, publishDate=2020-04-29, price=413.05, content=null, tagName=Adventure]]
+
+[2020-04-29 14:48:33]  INFO  Purchased_BookDAOImpl.deleteItem(): Line 161 - Book '1111' was removed
+
+[2020-04-29 14:48:34]  INFO  TestDAO.main(): Line 66 - true
+
+[2020-04-29 14:48:44]  INFO  Purchased_BookDAOImpl.clearHistory(): Line 190 - purchased_book_firstlast has been cleared
+
+[2020-04-29 14:48:44]  INFO  TestDAO.main(): Line 67 - true
+
+[2020-05-02 10:18:43]  ERROR  TagDAOImpl.getTagByISBN(): Line 100 - Tag for '1111' could not be found
+
+[2020-05-02 10:18:43]  INFO  TestDAO.main(): Line 47 - 
+
+[2020-05-02 10:26:28]  INFO  TestDAO.main(): Line 47 - 
+
+[2020-05-02 10:26:52]  INFO  TestDAO.main(): Line 47 - 
+
+[2020-05-02 10:29:31]  INFO  TagDAOImpl.getTagByISBN(): Line 99 - [
+Tag [isbn13=1111111111111, tagName=Non-Fiction]]
+
+[2020-05-02 10:29:31]  INFO  TestDAO.main(): Line 47 - 
+
+[2020-05-02 10:32:49]  INFO  TestDAO.main(): Line 47 - 
+
+[2020-05-02 10:33:08]  INFO  TestDAO.main(): Line 47 - 
+Tag [isbn13=1111111111111, tagName=Non-Fiction]
+
+[2020-05-02 10:33:54]  INFO  TestDAO.main(): Line 47 - 
+Tag [isbn13=1111111111111, tagName=Non-Fiction]
+
+[2020-05-05 09:05:34]  INFO  TestDAO.main(): Line 57 - []
+
+[2020-05-05 10:41:19]  INFO  TestDAO.main(): Line 57 - []
+
+[2020-05-05 10:41:43]  INFO  TestDAO.main(): Line 52 - [
+User [username=jdoe@mail.com, password=, fullName=null], 
+User [username=jsmith@mail.com, password=pass, fullName=Josh Smith], 
+User [username=user@mail.com, password=pass, fullName=User Name]]
+
+[2020-05-05 12:03:57]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Cannot add or update a child row: a foreign key constraint fails (`pubhub`.`shopping_cart_user`, CONSTRAINT `fk_isbn_13_cart_a` FOREIGN KEY (`isbn_13`) REFERENCES `book` (`isbn_13`) ON DELETE CASCADE ON UPDATE CASCADE)
+
+[2020-05-05 12:06:12]  INFO  BookDAOImpl.addBook(): Line 143 - 'PT' was added
+
+[2020-05-05 12:06:13]  INFO  Shopping_CartDAOImpl.addBook(): Line 128 - 'PT' was added to cart
+
+[2020-05-05 12:21:52]  INFO  Shopping_CartDAOImpl.addBook(): Line 128 - 'PT' was added to cart
+
+[2020-05-05 12:57:56]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[B@5ff2e84b)' at line 1
+
+[2020-05-05 13:22:40]  INFO  Shopping_CartDAOImpl.addBook(): Line 128 - 'Title' was added to cart
+
+[2020-05-05 16:14:45]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.serial.SerialBlob@29489ce8)' at line 1
+
+[2020-05-05 16:41:31]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - Duplicate entry '1234567890123' for key 'isbn_13_UNIQUE'
+
+[2020-05-05 16:41:56]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[B@5ff2e84b)' at line 1
+
+[2020-05-05 18:57:55]  INFO  Shopping_CartDAOImpl.addBook(): Line 130 - 'The Adventures of Steve' was added to cart
+
+[2020-05-05 19:25:45]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.serial.SerialBlob@29489ce8)' at line 1
+
+[2020-05-05 20:04:49]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.jdbc.Blob@56ac5c80)' at line 1
+
+[2020-05-06 10:41:42]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@5ff2e84b)' at line 1
+
+[2020-05-06 10:46:04]  INFO  Shopping_CartDAOImpl.addBook(): Line 137 - 'The Adventures of Steve' was added to cart
+
+[2020-05-06 10:51:16]  ERROR  SqlExceptionHelper.logExceptions(): Line 142 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[B@5ff2e84b)' at line 1
+
+[2020-05-06 10:58:35]  INFO  Shopping_CartDAOImpl.addBook(): Line 135 - 'The Adventures of Steve' was added to cart
+
+[2020-05-09 09:56:09]  INFO  Purchased_BookDAOImpl.createHistory(): Line 95 - Purchased_Book table has been created for 'user@mail.com'
+
+[2020-05-09 10:04:03]  INFO  BookDAOImpl.addBook(): Line 143 - 'PT' was added
+
+[2020-05-09 10:04:03]  INFO  TestDAO.main(): Line 39 - true
+
+[2020-05-09 10:04:03]  INFO  Purchased_BookDAOImpl.addBook(): Line 133 - 'PT' was added to order history
+
+[2020-05-09 10:04:03]  INFO  TestDAO.main(): Line 66 - true
+
+[2020-05-15 12:27:50]  INFO  Shopping_CartDAOImpl.clearCart(): Line 193 - Table 'shopping_cart_user' has been cleared
+
+[2020-05-15 12:27:50]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-05-15 12:33:14]  INFO  Shopping_CartDAOImpl.clearCart(): Line 193 - Table 'shopping_cart_user' has been cleared
+
+[2020-05-15 12:33:14]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-05-15 13:48:06]  INFO  Shopping_CartDAOImpl.clearCart(): Line 193 - Table 'shopping_cart_user' has been cleared
+
+[2020-05-15 13:48:07]  INFO  TestDAO.main(): Line 62 - true
+
+[2020-05-15 14:09:14]  INFO  Shopping_CartDAOImpl.clearCart(): Line 193 - Table 'shopping_cart_user' has been cleared
+
+[2020-05-15 14:09:14]  INFO  TestDAO.main(): Line 62 - true
+
