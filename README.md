@@ -144,10 +144,45 @@ If you have not done so yet, make sure Wildfly is set up on Eclipse for deployme
 Please read [*Java Development Environment Setup*](Java%20Development%20Environment%20Setup.pdf) to see how to set up PostgreSQL. Follow the instructions in the *Installing a Database (PostgreSQL)* section. Create [these tables](https://github.com/jtanaeki/PubHub#tables-in-database) in the database and fill in random values.
 
 ## Functionalities
-- The customer
+- The customer/author should log in or register before accessing homepage
 - The customer should be able to see a list of books, which includes the isbn number, title, author, publish date, and price
 - The customer should be able to download any book(s) from the list of published books and update the title, author, and/or price of any book(s)
 - The customer should be able to type in the text box and search for books from the list by any category
-- The author must login before uploading a PDF version of their book and publish it, adding it to the list of published books
+- The author must be an authenticated user to upload a PDF version of their book and publish it, adding it to the list of published books
+
+## Interface
+### Login and Registration Page
+<div>
+    <img alt="Login Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/121787808-6251e800-cb96-11eb-9683-f21bf2926695.png">
+    <img alt="Registration Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/121790132-47896e80-cbaa-11eb-90e9-34187e136813.png"                   align="right">
+</div>
+    
+### Home and List of Published Books
+<div>
+    <img alt="Home Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/120939717-49a18800-c6e7-11eb-8b69-323a662a99c8.png">
+    <img alt="List of Published Books Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/120939768-971df500-c6e7-11eb-91a2-6b9d105591bb.png"        align="right">
+</div>
+
+### Authentication and Publishing Page
+<div>
+    <img alt="Authentication Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/121793181-7f081300-cbca-11eb-9e1c-51acc786982b.png">
+    <img alt="Publishing Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/120939807-c92f5700-c6e7-11eb-9145-5f2953d06f64.png"                   align="right">
+</div>
+
+## Tools Used
+### Servers
+- [Wildfly](https://www.wildfly.org/)
+
+### Databases
+- [PostgreSQL](https://www.postgresql.org/)
+
+### Languages & Frameworks
+- Frontend:
+    - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [jQuery](https://api.jquery.com/), [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/), [JavaServer Pages (JSPs)](https://docs.oracle.com/javaee/5/tutorial/doc/bnagx.html)
+- Backend:
+    - [Java Servlets](https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html)
+
+## How to Discuss and Contribute
+Some of the best ways to contribute are to try things out, file issues, join in design conversations, and make pull-requests. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before you begin for details on the [code of conduct](CODE_OF_CONDUCT.md), as well as the process for submitting [pull requests](https://github.com/jtanaeki/RideXpress/pulls). Proposals for changes and other issues specific to RideXpress can be found [here](https://github.com/jtanaeki/RideXpress/issues).
 
 <!-- GO THROUGH EACH LINK -->
