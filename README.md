@@ -153,20 +153,20 @@ Please read [*Java Development Environment Setup*](Java%20Development%20Environm
 ## Interface
 ### Login and Registration Page
 <div>
-    <img alt="Login Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/121787808-6251e800-cb96-11eb-9683-f21bf2926695.png">
-    <img alt="Registration Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/121790132-47896e80-cbaa-11eb-90e9-34187e136813.png"                   align="right">
+    <img alt="Login Page" height="250" width="460" src="https://user-images.githubusercontent.com/55217672/121787808-6251e800-cb96-11eb-9683-f21bf2926695.png">
+    <img alt="Registration Page" height="250" width="460" src="https://user-images.githubusercontent.com/55217672/121790132-47896e80-cbaa-11eb-90e9-34187e136813.png"                   align="right">
 </div>
     
 ### Home and List of Published Books
 <div>
-    <img alt="Home Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/120939717-49a18800-c6e7-11eb-8b69-323a662a99c8.png">
-    <img alt="List of Published Books Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/120939768-971df500-c6e7-11eb-91a2-6b9d105591bb.png"        align="right">
+    <img alt="Home Page" height="250" width="460" src="https://user-images.githubusercontent.com/55217672/120939717-49a18800-c6e7-11eb-8b69-323a662a99c8.png">
+    <img alt="List of Published Books Page" height="250" width="460" src="https://user-images.githubusercontent.com/55217672/120939768-971df500-c6e7-11eb-91a2-6b9d105591bb.png"        align="right">
 </div>
 
 ### Authentication and Publishing Page
 <div>
-    <img alt="Authentication Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/121793181-7f081300-cbca-11eb-9e1c-51acc786982b.png">
-    <img alt="Publishing Page" height="250" width="465" src="https://user-images.githubusercontent.com/55217672/120939807-c92f5700-c6e7-11eb-9145-5f2953d06f64.png"                   align="right">
+    <img alt="Authentication Page" height="250" width="460" src="https://user-images.githubusercontent.com/55217672/121793181-7f081300-cbca-11eb-9e1c-51acc786982b.png">
+    <img alt="Publishing Page" height="250" width="460" src="https://user-images.githubusercontent.com/55217672/120939807-c92f5700-c6e7-11eb-9145-5f2953d06f64.png"                   align="right">
 </div>
 
 ## Tools Used
