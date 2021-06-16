@@ -153,20 +153,20 @@ Please read [*Java Development Environment Setup*](Java%20Development%20Environm
 ## Interface
 ### Login and Registration Page
 <div>
-    <img alt="Login Page" width="460" height="250" src="https://user-images.githubusercontent.com/55217672/121787808-6251e800-cb96-11eb-9683-f21bf2926695.png">
-    <img alt="Registration Page" width="460" height="250" src="https://user-images.githubusercontent.com/55217672/121790132-47896e80-cbaa-11eb-90e9-34187e136813.png">
+    <img alt="Login Page" width="470" height="250" src="https://user-images.githubusercontent.com/55217672/121787808-6251e800-cb96-11eb-9683-f21bf2926695.png">
+    <img alt="Registration Page" width="470" height="250" src="https://user-images.githubusercontent.com/55217672/121790132-47896e80-cbaa-11eb-90e9-34187e136813.png">
 </div>
     
 ### Home and List of Published Books
 <div>
-    <img alt="Home Page" width="460" height="250" src="https://user-images.githubusercontent.com/55217672/120939717-49a18800-c6e7-11eb-8b69-323a662a99c8.png">
-    <img alt="List of Published Books Page" width="460" height="250" src="https://user-images.githubusercontent.com/55217672/120939768-971df500-c6e7-11eb-91a2-6b9d105591bb.png">
+    <img alt="Home Page" width="470" height="250" src="https://user-images.githubusercontent.com/55217672/120939717-49a18800-c6e7-11eb-8b69-323a662a99c8.png">
+    <img alt="List of Published Books Page" width="470" height="250" src="https://user-images.githubusercontent.com/55217672/120939768-971df500-c6e7-11eb-91a2-6b9d105591bb.png">
 </div>
 
 ### Authentication and Publishing Page
 <div>
-    <img alt="Authentication Page" width="460" height="250" src="https://user-images.githubusercontent.com/55217672/121793181-7f081300-cbca-11eb-9e1c-51acc786982b.png">
-    <img alt="Publishing Page" width="460" height="250" src="https://user-images.githubusercontent.com/55217672/120939807-c92f5700-c6e7-11eb-9145-5f2953d06f64.png">
+    <img alt="Authentication Page" width="470" height="250" src="https://user-images.githubusercontent.com/55217672/121793181-7f081300-cbca-11eb-9e1c-51acc786982b.png">
+    <img alt="Publishing Page" width="470" height="250" src="https://user-images.githubusercontent.com/55217672/120939807-c92f5700-c6e7-11eb-9145-5f2953d06f64.png">
 </div>
 
 ## Tools Used
