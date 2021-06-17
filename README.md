@@ -180,5 +180,3 @@ Please read [*Java Development Environment Setup*](Java%20Development%20Environm
 
 ## How to Discuss and Contribute
 Some of the best ways to contribute are to try things out, file issues, join in design conversations, and make pull-requests. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before you begin for details on the [code of conduct](CODE_OF_CONDUCT.md), as well as the process for submitting [pull requests](https://github.com/jtanaeki/PubHub-Hibernate/pulls). Proposals for changes and other issues specific to PubHub-Hibernate can be found [here](https://github.com/jtanaeki/PubHub-Hibernate/issues).
-
-<!-- GO THROUGH EACH LINK -->
