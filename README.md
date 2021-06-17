@@ -30,12 +30,8 @@ After installing the necessary software, you can clone a local copy of the repos
 git clone https://github.com/jtanaeki/PubHub-Hibernate.git
 ```
 
-### Tables in Database
-![Image of Books Table](database_files/books-table.png)
-
-![Image of Books_Tags Table](database_files/books_tags-table.png)
-
-![Image of Users Table]()
+### Entity Relational Diagram of Tables in Database
+![Image of Entity Relational Diagram](https://user-images.githubusercontent.com/55217672/122313759-c8b36f00-cee4-11eb-94a0-3367b37a694f.png)
 
 ## Running the Application
 The following instructions will help you get the program running via Eclipse.
@@ -141,7 +137,7 @@ In order to compile the Java Servlets/Java Server Pages(JSP files), a _javax.ser
 If you have not done so yet, make sure Wildfly is set up on Eclipse for deployment. Please read [*Java Development Environment Setup*](Java%20Development%20Environment%20Setup.pdf). Follow the instructions in the *Integrating Your Application Server with Your IDE (JBoss Middleware)* section.
 
 ### Setting up the Database
-Please read [*Java Development Environment Setup*](Java%20Development%20Environment%20Setup.pdf) to see how to set up PostgreSQL. Follow the instructions in the *Installing a Database (PostgreSQL)* section. Create [these tables](https://github.com/jtanaeki/PubHub#tables-in-database) in the database and fill in random values.
+Please read [*Java Development Environment Setup*](Java%20Development%20Environment%20Setup.pdf) to see how to set up PostgreSQL. Follow the instructions in the *Installing a Database (PostgreSQL)* section. Create [these tables](https://github.com/jtanaeki/PubHub-Hibernate#Entity-Relational-Diagram-of-Tables-in-Database) in the database and fill in random values.
 
 ## Functionalities
 - The customer/author should log in or register before accessing homepage
